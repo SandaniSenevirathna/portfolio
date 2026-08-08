@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+  .font-mono {
+    font-family: 'Space Grotesk', monospace;
+  }
+}
+
+/* Outlined Typography Effect matching the Dymas Alfin style */
+.text-stroke-outline {
+  -webkit-text-stroke: 2px #0f0f11;
+  color: transparent;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}
+
+/* Subtle cloud texture background effect */
+.bg-cloud-pattern {
+  background-color: #e3e5e9;
+  background-image: 
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.8) 0%, rgba(220, 225, 230, 0.4) 60%),
+    radial-gradient(circle at 10% 80%, rgba(240, 242, 245, 0.9) 0%, rgba(210, 215, 222, 0.3) 50%),
+    radial-gradient(circle at 90% 70%, rgba(255, 255, 255, 0.7) 0%, rgba(220, 225, 235, 0.3) 60%);
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.bg-glass-dark {
+  background: rgba(20, 20, 24, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2c5cc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9fa3ad;
+}
